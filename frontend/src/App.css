@@ -1,0 +1,99 @@
+/* Default styles for large screens */
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .taskbuddy-title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .view-toggle {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .filter-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .search-bar {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+  }
+  
+  .add-task-button {
+    margin-top: 10px;
+  }
+  
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    .navbar-container {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .taskbuddy-title {
+      justify-content: center;
+    }
+  
+    .view-toggle {
+      display: none;
+    }
+  
+    .filter-container {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .search-bar {
+      width: 100%;
+    }
+  
+    .add-task-button {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  /* Large screen layout */
+  @media (max-width: 767px) { 
+    /* Stack Search & Add Task below Filter By */
+    .search-add-container {
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+  
+    .search-bar {
+      width: 100%;
+    }
+  
+    .search-bar .form-control {
+      width: 100%;
+    }
+  
+    .add-task-button {
+      display: flex;
+      justify-content: flex-start;
+     
+    }
+  
+    /* Reduce ADD TASK button size */
+    .add-task-button button {
+      padding: 6px 12px;  /* Reduce padding */
+      font-size: 14px;    /* Decrease font size */
+      width: auto;        /* Prevents full width */
+    }
+  }
+  
+    
