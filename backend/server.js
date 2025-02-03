@@ -6,8 +6,11 @@ import taskRoutes from "./routes/taskRoutes.js";
 
 dotenv.config();
 const app = express();
-
-app.use(cors());
+const corsOptions = {
+  origin: 'https://taskmanagement-frontend-eun9.onrender.com/', 
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 console.log("MongoDB URI:", process.env.MONGO_URI);
 
