@@ -7,7 +7,7 @@ import taskRoutes from "./routes/taskRoutes.js";
 dotenv.config();
 const app = express();
 const corsOptions = {
-  origin: 'https://taskmanagement-frontend-eun9.onrender.com/', 
+  origin: 'https://taskmanagement-frontend-eun9.onrender.com', 
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
